@@ -89,14 +89,14 @@ Os notebooks em `notebooks/` consumem os artefatos gerados e produzem as figuras
 
 Por tamanho, nem todos os CSVs vão no git. A regra está em `.gitignore`:
 
-| Artefato | Em `.gitignore`? | Como obter |
-|---|---|---|
-| `data/*_full.csv` (raw) | Sim | `scripts/fetch_*_full_openml.py` |
-| `data/datasets/*_block_*.csv`, `*_original.csv`, `*_conjunto_{10,20,30}pct.csv` | Sim | `scripts/build_*_meta_datasets.py` |
-| `data/datasets/*_conjunto_10_20_30pct.csv` | Não | versionado (é entrada de `compute_*`) |
-| `data/datasets/*_meta_*_10_20_30pct.csv` | Não | versionado (é a saída cara do pipeline) |
-| `data/meta_results/*.csv` | Não | versionado (saída de `train_meta_*`) |
-| `data/comparison_results/*.csv`, `figures/*.png` | Não | versionado (saída do notebook 04) |
+| Artefato | Como obter |
+|---|---|
+| `data/*_full.csv` (raw) | `scripts/fetch_*_full_openml.py` |
+| `data/datasets/*_block_*.csv`, `*_original.csv`, `*_conjunto_{10,20,30}pct.csv` | `scripts/build_*_meta_datasets.py` |
+| `data/datasets/*_conjunto_10_20_30pct.csv` | versionado (é entrada de `compute_*`) |
+| `data/datasets/*_meta_*_10_20_30pct.csv` | versionado (é a saída cara do pipeline) |
+| `data/meta_results/*.csv` | versionado (saída de `train_meta_*`) |
+| `data/comparison_results/*.csv`, `figures/*.png` | versionado (saída do notebook 04) |
 
 
 ## Referências
