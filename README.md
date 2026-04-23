@@ -87,7 +87,7 @@ Os notebooks em `notebooks/` consumem os artefatos gerados e produzem as figuras
 
 ## Dados versionados e dados reproduzíveis
 
-Por tamanho, nem todos os CSVs vão no git. A regra está em `.gitignore`:
+Por tamanho, nem todos os CSVs vão no git:
 
 | Artefato | Como obter |
 |---|---|
